@@ -1,0 +1,15 @@
+.main--nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game--container {
+    display: none;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+body {
+    background-color: #242424;
+}
