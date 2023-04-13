@@ -5,16 +5,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BiteSizeArcade</title>
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
     </head>
     <body>
         <div id="root">
             <nav id="main-nav" class="main--nav">
-                <a href="/index.html">BiteSizeArcade</a>
-                <a href="/games/tictactoe.html">TicTacToe</a>
-                <a href="/games/rockpaperscissors.html">RockPaperScissors</a>
+                <div>
+                    <a href="/index.html">
+                        <img
+                            class="nav--logo"
+                            src="/public/nav-logo.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="nav-games">
+                    <a href="/games/sketchbox.html">Sketchbox</a>
+                    <a href="/games/tictactoe.html">TicTacToe</a>
+                    <a href="/games/rockpaperscissors.html">
+                        RockPaperScissors
+                    </a>
+                </div>
             </nav>
             <div id="main">
-                <p>This is my gaming portal</p>
+                <div class="main--content">
+                    <div class="main--text">
+                        <p>
+                            This portal serves as a collection for all the
+                            minigames I made in raw JavaScript while learning.
+                        </p>
+                        <p>
+                            Select a game to play below or from the navigation
+                            bar on top!
+                        </p>
+                    </div>
+                    <div class="main--games">
+                        <form action="/games/sketchbox.html">
+                            <button class="sketchbox-btn">Sketchbox</button>
+                        </form>
+                        <form action="/games/tictactoe.html">
+                            <button class="tictactoe-btn">TicTacToe</button>
+                        </form>
+                        <button class="rockpaperscissors-btn">
+                            RockPaperScissors
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="/js/main.js" defer></script>
