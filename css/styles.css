@@ -39,7 +39,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    margin-top: 10px;
+    padding: 10px 0px;
+    background-color: rgba(5, 25, 55, 0.25);
 }
 
 .nav--logo {
@@ -75,7 +76,8 @@ a:hover {
     display: flex;
     gap: 5px;
     max-width: 80%;
-    margin-top: 100px;
+    margin: 100px 0px;
+    margin-bottom: 50px;
 }
 
 .main--game-img {
@@ -141,4 +143,15 @@ button {
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
+}
+
+.tenzies--link:hover {
+    color: rgb(0, 95, 179);
+}
+
+.main--heart {
+    width: 5rem;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
