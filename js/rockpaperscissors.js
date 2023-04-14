@@ -78,7 +78,7 @@ images.forEach((image) =>
 
 const modal = document.getElementById("myModal");
 // popup close
-const span = document.getElementsByClassName("close");
+const span = document.querySelector(".close");
 const popup = document.querySelector(".popup");
 
 // When the user clicks on <span> (x), close the modal
