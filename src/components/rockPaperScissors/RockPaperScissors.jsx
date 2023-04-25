@@ -67,37 +67,48 @@ export default function RockPaperScissors() {
 
     return (
         <div
-            className="flex flex-col items-center"
+            className="flex flex-col items-center text-lg"
             onClick={modalStyle === "block" && handleCloseModal}
         >
-            <div className="score">
-                {playerScore} - {cpuScore}
-            </div>
-            <div className="top">{gameText}</div>
-            <div id="myModal" className="modal" style={{ display: modalStyle }}>
-                <div className="modal-content">
-                    <span className="close" onClick={handleCloseModal}>
-                        &times;
-                    </span>
-                    <p className="popup">{modalText}</p>
+            <h1 className="font-signature mb-6 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                RockPaperScissors!
+            </h1>
+            <div className="flex flex-col items-center gap-4 bg-transparent/50 p-4 w-10/12 md:w-9/12 lg:w-8/12 xl:w-6/12 border-4 border-black rounded-lg">
+                <div className="font-mono text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                    {playerScore} - {cpuScore}
+                </div>
+                <div className="font-mono text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+                    {gameText}
+                </div>
+                <div
+                    id="myModal"
+                    className="fixed bg-transparent/90 px-12 py-8 rounded-lg "
+                    style={{ display: modalStyle }}
+                >
+                    <div className="flex flex-col">
+                        <span className="ms-auto" onClick={handleCloseModal}>
+                            &times;
+                        </span>
+                        <p className="popup">{modalText}</p>
+                    </div>
                 </div>
             </div>
 
-            <div className="flex flex-row">
+            <div className="flex flex-row gap-2 mt-4">
                 <button
-                    className="w-20"
+                    className="w-20 sm:w-24 md:w-28 lg:w-32 bg-transparent/20 rounded-lg border-4 border-black hover:bg-transparent/25 active:bg-transparent/30"
                     onClick={() => handleImageClick("Rock")}
                 >
                     <img data-choice="Rock" src={rockImg} alt="Rock" />
                 </button>
                 <button
-                    className="w-20"
+                    className="w-20 sm:w-24 md:w-28 lg:w-32 bg-transparent/20 rounded-lg border-4 border-black hover:bg-transparent/25 active:bg-transparent/30"
                     onClick={() => handleImageClick("Paper")}
                 >
                     <img data-choice="Paper" src={paperImg} alt="Paper" />
                 </button>
                 <button
-                    className="w-20"
+                    className="w-20 sm:w-24 md:w-28 lg:w-32 bg-transparent/20 rounded-lg border-4 border-black hover:bg-transparent/25 active:bg-transparent/30"
                     onClick={() => handleImageClick("Scissors")}
                 >
                     <img
