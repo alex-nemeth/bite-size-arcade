@@ -22,6 +22,9 @@ export default function Navbar() {
                 <Link to="/rockpaperscissors">
                     <a>RockPaperScissors</a>
                 </Link>
+                <Link to="/tictactoe">
+                    <a>TicTacToe</a>
+                </Link>
             </div>
         </nav>
     );

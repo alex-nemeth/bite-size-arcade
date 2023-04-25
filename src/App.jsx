@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import RockPaperScissors from "./components/rockPaperScissors/RockPaperScissors";
 import Sketchbox from "./components/sketchBox/Sketchbox";
 import { Route, Routes } from "react-router";
+import TicTacToe from "./components/ticTacToe/TicTacToe";
 
 function App() {
     return (
@@ -23,6 +24,14 @@ function App() {
                     element={
                         <>
                             <Navbar /> <RockPaperScissors />
+                        </>
+                    }
+                />
+                <Route
+                    path="/tictactoe"
+                    element={
+                        <>
+                            <Navbar /> <TicTacToe />
                         </>
                     }
                 />
