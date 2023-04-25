@@ -48,7 +48,7 @@ export default function Sketchbox() {
                     w-10/12 sm:w-9/12 md:w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12
                     font-mono"
         >
-            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <h1 className="font-signature mb-2 text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                 Sketchbox!
             </h1>
             <div
