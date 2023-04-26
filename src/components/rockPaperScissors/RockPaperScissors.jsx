@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import rockImg from "/images/rock.png";
-import paperImg from "/images/paper.png";
-import scissorsImg from "/images/scissors.png";
+import React, { useState, useEffect } from "react";
+import rockImg from "/images/rockpaperscissors/rock.png";
+import paperImg from "/images/rockpaperscissors/paper.png";
+import scissorsImg from "/images/rockpaperscissors/scissors.png";
 
 function getComputerChoice() {
     let num = Math.floor(Math.random() * 3) + 1;
@@ -30,6 +30,10 @@ export default function RockPaperScissors() {
     const [gameText, setGameText] = useState("Rock, paper or scissors?");
     const [modalStyle, setModalStyle] = useState("none");
     const [modalText, setModalText] = useState("");
+
+    useEffect(() => {
+        document.title = "RockPaperScissors! - ByteSizeArcade";
+    });
 
     function resetGame() {
         setPlayerScore(0);

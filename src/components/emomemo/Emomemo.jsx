@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./Header";
 import Game from "./Game";
 
@@ -6,6 +6,10 @@ export default function Emomemo() {
     const [score, setScore] = useState(0);
     const [best, setBest] = useState(null);
     const [clicked, setClicked] = useState([]);
+
+    useEffect(() => {
+        document.title = "Emomemo - ByteSizeArcade";
+    });
 
     function incrementScore() {
         setScore((prevScore) => prevScore + 1);

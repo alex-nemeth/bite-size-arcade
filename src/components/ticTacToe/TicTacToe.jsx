@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Square from "./Square";
 
 export default function TicTacToe() {
@@ -6,6 +6,10 @@ export default function TicTacToe() {
     const [player, setPlayer] = useState("X");
     const [game, setGame] = useState(true);
     const [winningSquares, setWinningSquares] = useState([]);
+
+    useEffect(() => {
+        document.title = "TicTacToe! - ByteSizeArcade";
+    });
 
     function handleClick(i) {
         if (game) {

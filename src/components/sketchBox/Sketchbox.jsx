@@ -1,10 +1,14 @@
-import React, { useState, forceUpdate } from "react";
+import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 
 export default function Sketchbox() {
     const [size, setSize] = useState(32);
     const [sessionId, setSessionId] = useState(nanoid());
     let color = "black";
+
+    useEffect(() => {
+        document.title = "Sketchbox! - ByteSizeArcade";
+    });
 
     function createBoxes(size) {
         const amountOfBoxes = size * size;

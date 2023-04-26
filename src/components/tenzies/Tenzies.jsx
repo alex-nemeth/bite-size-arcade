@@ -16,6 +16,10 @@ export default function Tenzies() {
     );
 
     useEffect(() => {
+        document.title = "Tenzies - ByteSizeArcade";
+    });
+
+    useEffect(() => {
         const heldValue = dice[0].value;
         const allHeld = dice.every((die) => die.isHeld);
         const allSameValue = dice.every((die) => die.value === heldValue);
