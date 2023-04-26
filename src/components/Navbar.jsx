@@ -28,6 +28,9 @@ export default function Navbar() {
                 <Link to="/tenzies">
                     <a>Tenzies</a>
                 </Link>
+                <Link to="/emomemo">
+                    <a>Emomemo</a>
+                </Link>
             </div>
         </nav>
     );
