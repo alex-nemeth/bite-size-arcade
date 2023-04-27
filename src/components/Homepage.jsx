@@ -11,7 +11,13 @@ export default function Homepage() {
         return games.map((game) => (
             <div className="border-2 rounded-md flex flex-col bg-transparent/40">
                 <h1 className="text-2xl text-center py-2">{game.title}</h1>
-                <img src={game.img} alt="" />
+                <Link to={game.url}>
+                    <img
+                        className="px-4 mx-auto w-full"
+                        src={game.img}
+                        alt=""
+                    />
+                </Link>
                 <p className="text-md text-center">{game.description}</p>
                 <Link className="mx-auto" to={game.url}>
                     <button className="text-xl border-2 rounded-md px-4 py-2 my-4 bg-blue-600">
