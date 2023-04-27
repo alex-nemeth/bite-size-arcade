@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import games from "../games";
 
 export default function Homepage() {
@@ -12,9 +13,11 @@ export default function Homepage() {
                 <h1 className="text-2xl text-center py-2">{game.title}</h1>
                 <img src={game.img} alt="" />
                 <p className="text-md text-center">{game.description}</p>
-                <button className="text-xl border-2 rounded-md px-4 py-2 my-4 mx-auto bg-blue-600">
-                    Play {game.title}
-                </button>
+                <Link className="mx-auto" to={game.url}>
+                    <button className="text-xl border-2 rounded-md px-4 py-2 my-4 bg-blue-600">
+                        Play {game.title}
+                    </button>
+                </Link>
             </div>
         ));
     }
