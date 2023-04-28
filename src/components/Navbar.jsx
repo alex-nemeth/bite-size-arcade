@@ -1,37 +1,17 @@
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import Logo from "./Logo";
+import Anchors from "./Anchors";
+import Dropdown from "./Dropdown";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function Navbar() {
+    const { width } = useWindowDimensions();
+
     return (
-        <nav className="flex flex-row justify-between mb-16">
-            <Link to="/">
-                <div className="flex items-center">
-                    <img
-                        src="/images/logo.png"
-                        alt="ByteSizeArcade Logo"
-                        className="w-14 mr-2"
-                    />
-                    <a href="/" className="font-signature">
-                        ByteSizeArcade
-                    </a>
-                </div>
-            </Link>
-            <div className="nav-games">
-                <Link to="/sketchbox">
-                    <a>Sketchbox</a>
-                </Link>
-                <Link to="/rockpaperscissors">
-                    <a>RockPaperScissors</a>
-                </Link>
-                <Link to="/tictactoe">
-                    <a>TicTacToe</a>
-                </Link>
-                <Link to="/tenzies">
-                    <a>Tenzies</a>
-                </Link>
-                <Link to="/emomemo">
-                    <a>Emomemo</a>
-                </Link>
-            </div>
+        <nav className="flex flex-row justify-between mb-8 relative bg-transparent/50 py-2 w-full">
+            <Logo />
+            {width > 767 ? <Anchors /> : <Dropdown />}
         </nav>
     );
 }

@@ -9,14 +9,10 @@ export default function Homepage() {
 
     function generateCards() {
         return games.map((game) => (
-            <div className="border-2 rounded-md flex flex-col bg-transparent/40">
+            <div className="border-2 rounded-md flex flex-col bg-transparent/40 w-10/12">
                 <h1 className="text-2xl text-center py-2">{game.title}</h1>
                 <Link to={game.url}>
-                    <img
-                        className="px-4 mx-auto w-full"
-                        src={game.img}
-                        alt=""
-                    />
+                    <img className="px-4 mx-auto" src={game.img} alt="" />
                 </Link>
                 <p className="text-md text-center">{game.description}</p>
                 <Link className="mx-auto" to={game.url}>

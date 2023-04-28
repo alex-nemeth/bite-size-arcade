@@ -10,7 +10,7 @@ import Tenzies from "./components/tenzies/Tenzies";
 
 function App() {
     return (
-        <div className="bg-gradient-to-br from-blue-900 to-purple-950 text-white min-h-screen h-full w-screen">
+        <div className="bg-gradient-to-br from-blue-900 to-purple-950 text-white min-h-screen h-full w-full">
             <Routes>
                 <Route
                     path="/"
