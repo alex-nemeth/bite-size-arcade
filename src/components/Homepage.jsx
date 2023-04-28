@@ -25,7 +25,7 @@ export default function Homepage() {
     }
 
     return (
-        <div className="grid grid-cols-1 w-10/12 mx-auto gap-4">
+        <div className="grid grid-cols-1 w-10/12 ms-auto gap-4">
             {generateCards()}
         </div>
     );

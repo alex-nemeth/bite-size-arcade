@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Anchors() {
     return (
-        <div className="nav-games">
+        <div className="flex gap-3 items-center me-4">
             <Link to="/sketchbox">
                 <a>Sketchbox</a>
             </Link>

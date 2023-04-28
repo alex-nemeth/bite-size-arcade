@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <nav className="flex flex-row justify-between mb-8 relative bg-transparent/50 py-2 w-full">
             <Logo />
-            {width > 767 ? <Anchors /> : <Dropdown />}
+            {width >= 820 ? <Anchors /> : <Dropdown />}
         </nav>
     );
 }

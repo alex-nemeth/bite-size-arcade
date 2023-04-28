@@ -6,3 +6,20 @@
 .font-signature {
     font-family: "Press Start 2P", cursive;
 }
+
+/* ::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #424242e7;
+    opacity: 20%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4f4f4f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */

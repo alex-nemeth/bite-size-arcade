@@ -24,7 +24,7 @@ export default function Dropdown() {
                 <div
                     className={`${
                         dropdown ? "absolute" : "hidden"
-                    } right-2 flex flex-col py-2 bg-white text-black rounded-md w-48 mt-4 shadow-2xl`}
+                    } right-2 flex flex-col py-2 bg-white text-black rounded-md w-48 mt-4 shadow-2xl transition-all`}
                 >
                     <Link className="px-4 py-2" to="/sketchbox">
                         <a>Sketchbox</a>
