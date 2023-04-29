@@ -9,7 +9,7 @@ export default function TicTacToe() {
 
     useEffect(() => {
         document.title = "TicTacToe! - ByteSizeArcade";
-    });
+    }, []);
 
     function handleClick(i) {
         if (game) {
