@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import RockPaperScissors from "./components/rockPaperScissors/RockPaperScissors";
@@ -8,9 +8,29 @@ import { Route, Routes } from "react-router";
 import TicTacToe from "./components/ticTacToe/TicTacToe";
 import Tenzies from "./components/tenzies/Tenzies";
 
+const documentTitle = document.title;
+
 function App() {
+    const [background, setBackground] = useState();
+    const [scene, setScene] = useState(documentTitle);
+
+    useEffect(() => {
+        changeBackground();
+    }, [scene]);
+
+    function changeBackground() {
+        if (documentTitle === "ByteSizeArcade")
+            setBackground("bg-gradient-to-br from-blue-900 to-purple-950");
+        if (documentTitle === "Sketchbox! - ByteSizeArcade")
+            setBackground("bg-gradient-to-br from-blue-900 to-purple-950");
+        if (documentTitle === "TicTacToe! - ByteSizeArcade")
+            setBackground("bg-gradient-to-br from-emerald-900 to-sky-900");
+    }
+
     return (
-        <div className="bg-gradient-to-br from-blue-900 to-purple-950 text-white min-h-screen h-full w-full">
+        <div
+            className={`${background} text-white min-h-screen h-full w-full transition-colors`}
+        >
             <Routes>
                 <Route
                     path="/"

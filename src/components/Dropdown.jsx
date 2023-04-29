@@ -12,7 +12,7 @@ export default function Dropdown() {
         <div>
             <div>
                 <button
-                    className="block h-10 w-10 mr-2"
+                    className="block h-11 w-11 mr-2 p-1 rounded-md hover:bg-transparent/50 transition-all"
                     onClick={toggleDropdown}
                 >
                     <img
