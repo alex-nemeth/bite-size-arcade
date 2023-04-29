@@ -28,35 +28,35 @@ export default function Dropdown() {
                 >
                     <Link
                         onClick={() => setDropdown(false)}
-                        className="px-4 py-2"
+                        className="px-4 py-2 hover:bg-blue-500 hover:text-white transition-all"
                         to="/tenzies"
                     >
                         <a>Tenzies</a>
                     </Link>
                     <Link
                         onClick={() => setDropdown(false)}
-                        className="px-4 py-2"
+                        className="px-4 py-2 hover:bg-blue-500 hover:text-white transition-all"
                         to="/emomemo"
                     >
                         <a>Emomemo</a>
                     </Link>
                     <Link
                         onClick={() => setDropdown(false)}
-                        className="px-4 py-2"
+                        className="px-4 py-2 hover:bg-blue-500 hover:text-white transition-all"
                         to="/sketchbox"
                     >
                         <a>Sketchbox</a>
                     </Link>
                     <Link
                         onClick={() => setDropdown(false)}
-                        className="px-4 py-2"
+                        className="px-4 py-2 hover:bg-blue-500 hover:text-white transition-all"
                         to="/tictactoe"
                     >
                         <a>TicTacToe</a>
                     </Link>
                     <Link
                         onClick={() => setDropdown(false)}
-                        className="px-4 py-2"
+                        className="px-4 py-2 hover:bg-blue-500 hover:text-white transition-all"
                         to="/rockpaperscissors"
                     >
                         <a>RockPaperScissors</a>
