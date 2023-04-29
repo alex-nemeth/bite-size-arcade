@@ -8,7 +8,7 @@ export default function Sketchbox() {
 
     useEffect(() => {
         document.title = "Sketchbox! - ByteSizeArcade";
-    });
+    }, []);
 
     function createBoxes(size) {
         const amountOfBoxes = size * size;

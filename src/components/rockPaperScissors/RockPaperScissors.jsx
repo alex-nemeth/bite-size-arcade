@@ -33,7 +33,7 @@ export default function RockPaperScissors() {
 
     useEffect(() => {
         document.title = "RockPaperScissors! - ByteSizeArcade";
-    });
+    }, []);
 
     function resetGame() {
         setPlayerScore(0);

@@ -17,7 +17,7 @@ export default function Tenzies() {
 
     useEffect(() => {
         document.title = "Tenzies - ByteSizeArcade";
-    });
+    }, []);
 
     useEffect(() => {
         const heldValue = dice[0].value;

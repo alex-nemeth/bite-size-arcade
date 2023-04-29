@@ -5,7 +5,7 @@ import games from "../games";
 export default function Homepage() {
     useEffect(() => {
         document.title = "ByteSizeArcade";
-    });
+    }, []);
 
     function generateCards() {
         return games.map((game) => (

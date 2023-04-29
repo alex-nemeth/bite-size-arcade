@@ -9,7 +9,7 @@ export default function Emomemo() {
 
     useEffect(() => {
         document.title = "Emomemo - ByteSizeArcade";
-    });
+    }, []);
 
     function incrementScore() {
         setScore((prevScore) => prevScore + 1);
