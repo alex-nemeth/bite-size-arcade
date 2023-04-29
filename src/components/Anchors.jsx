@@ -3,19 +3,28 @@ import { Link } from "react-router-dom";
 export default function Anchors() {
     return (
         <div className="flex gap-3 items-center me-4">
-            <Link to="/tenzies">
+            <Link className="hover:text-blue-500 transition-all" to="/tenzies">
                 <a>Tenzies</a>
             </Link>
-            <Link to="/emomemo">
+            <Link className="hover:text-blue-500 transition-all" to="/emomemo">
                 <a>Emomemo</a>
             </Link>
-            <Link to="/sketchbox">
+            <Link
+                className="hover:text-blue-500 transition-all"
+                to="/sketchbox"
+            >
                 <a>Sketchbox</a>
             </Link>
-            <Link to="/tictactoe">
+            <Link
+                className="hover:text-blue-500 transition-all"
+                to="/tictactoe"
+            >
                 <a>TicTacToe</a>
             </Link>
-            <Link to="/rockpaperscissors">
+            <Link
+                className="hover:text-blue-500 transition-all"
+                to="/rockpaperscissors"
+            >
                 <a>RockPaperScissors</a>
             </Link>
         </div>
