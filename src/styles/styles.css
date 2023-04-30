@@ -7,19 +7,20 @@
     font-family: "Press Start 2P", cursive;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #424242e7;
+    background: #22126b;
     opacity: 20%;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #4f4f4f;
+    background: #3e21a7;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-} */
+}
