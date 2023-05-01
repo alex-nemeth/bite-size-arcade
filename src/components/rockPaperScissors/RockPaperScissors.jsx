@@ -90,7 +90,10 @@ export default function RockPaperScissors() {
                     style={{ display: modalStyle }}
                 >
                     <div className="flex flex-col">
-                        <span className="ms-auto" onClick={handleCloseModal}>
+                        <span
+                            className="ms-auto cursor-pointer"
+                            onClick={handleCloseModal}
+                        >
                             &times;
                         </span>
                         <p className="popup">{modalText}</p>
