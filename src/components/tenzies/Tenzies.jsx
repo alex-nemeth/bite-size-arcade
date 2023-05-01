@@ -63,6 +63,7 @@ export default function Tenzies() {
     function holdDice(id) {
         setDice((prevState) =>
             prevState.map((die) => {
+                console.log("held");
                 return die.id === id ? { ...die, isHeld: !die.isHeld } : die;
             })
         );
