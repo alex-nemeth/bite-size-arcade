@@ -16,7 +16,7 @@ export default function Homepage() {
                 </Link>
                 <p className="text-md text-center">{game.description}</p>
                 <Link className="mx-auto" to={game.url}>
-                    <button className="text-xl border-2 rounded-md px-4 py-2 my-4 bg-blue-600">
+                    <button className="text-xl border-2 rounded-md px-4 py-2 my-4 bg-blue-600 hover:bg-blue-700 transition-all">
                         Play {game.title}
                     </button>
                 </Link>
@@ -25,7 +25,7 @@ export default function Homepage() {
     }
 
     return (
-        <div className="grid grid-cols-1 w-10/12 mx-auto gap-4 xl:grid-cols-5 xl:w-11/12">
+        <div className="grid grid-cols-1 w-10/12 ms-auto lg:mx-auto gap-4 xl:grid-cols-5 xl:w-11/12">
             {generateCards()}
         </div>
     );
