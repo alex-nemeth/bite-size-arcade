@@ -12,12 +12,18 @@ export default function Homepage() {
             <div className="border-2 rounded-md flex flex-col justify-between bg-transparent/40 w-10/12">
                 <h1 className="text-2xl text-center py-2">{game.title}</h1>
                 <Link to={game.url}>
-                    <img className="px-4 mx-auto h-64" src={game.img} alt="" />
+                    <img
+                        className="px-4 mx-auto h-64 object-cover overflow-hidden"
+                        src={game.img}
+                        alt=""
+                    />
                 </Link>
-                <p className="text-md text-center">{game.description}</p>
+                <p className="text-md text-center mt-2 mx-3">
+                    {game.description}
+                </p>
                 <Link className="mx-auto" to={game.url}>
-                    <button className="text-xl border-2 rounded-md px-4 py-2 my-4 bg-blue-600 hover:bg-blue-700 transition-all">
-                        Play {game.title}
+                    <button className="text-xl border-2 rounded-md px-6 py-2 my-4 bg-blue-600 hover:bg-blue-700 transition-all">
+                        Play
                     </button>
                 </Link>
             </div>
@@ -25,7 +31,7 @@ export default function Homepage() {
     }
 
     return (
-        <div className="grid grid-cols-1 w-10/12 ms-auto lg:mx-auto gap-4 xl:grid-cols-5 xl:w-11/12">
+        <div className="grid grid-cols-1 w-10/12 ms-auto lg:mx-auto gap-4 xl:grid-cols-5 xl:w-11/12 h-full pt-12">
             {generateCards()}
         </div>
     );
