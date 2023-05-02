@@ -108,6 +108,9 @@ export default function TicTacToe() {
 
     return (
         <>
+            <h1 className="text-center mb-4 text-3xl font-signature">
+                TicTacToe!
+            </h1>
             <div className="grid grid-cols-3 w-10/12 mx-auto sm:w-9/12 md:w-8/12 lg:w-6/12 xl:w-4/12 xl:h-5/6">
                 <Square
                     winning={winningSquares.includes(0) ? true : false}
